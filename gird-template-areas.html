@@ -56,6 +56,32 @@
             grid-area: footer;
             background-color: green;
         }
+
+        @media(max-width: 768px){
+            .grid{
+                grid-template-areas: 
+                'header header'
+                'sidebar sidebar'
+                'content content'
+                'box1 box2'
+                'box3 box3'
+                'footer footer'
+            }
+        }
+
+        @media(max-width:500px){
+            .grid{
+                grid-template-areas: 
+                'header'
+                'sidebar'
+                'content'
+                'box1'
+                'box2'
+                'box3'
+                'footer'
+            }
+
+        }
     </style>
 </head>
 <body>
